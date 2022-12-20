@@ -1,5 +1,10 @@
 # create-svelte
 
+## Project Solution
+
+[FirstV1.webm](https://user-images.githubusercontent.com/7408092/208779484-ea73e686-a79a-42c6-a567-6d05a323224d.webm)
+
+
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
 ## Creating a project
