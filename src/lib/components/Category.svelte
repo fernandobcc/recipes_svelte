@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Tag from './Tag.svelte';
 	import type ICategory from '$lib/interfaces/ICategory';
 	import SelectedIngredient from './SelectedIngredient.svelte';
 
@@ -18,7 +17,7 @@
 	<ul class="ingredients">
 		{#each category.ingredients as ingredient (ingredient)}
 			<li>
-				<SelectedIngredient {ingredient} on:addIngredients on:removeIngredients />
+				<SelectedIngredient {ingredient} />
 			</li>
 		{/each}
 	</ul>

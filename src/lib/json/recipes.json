@@ -1,0 +1,67 @@
+[
+    {
+        "nome": "Roasted Garlic Paste",
+        "ingredientes": ["Garlic", "Olive Oil"],
+        "imagem": "roasted_garlic_paste.png"
+    },
+    {
+        "nome": "Roasted Garlic Pate",
+        "ingredientes": ["Garlic", "Olive Oil"],
+        "imagem": "roasted_garlic_pate.png"
+    },
+    {
+        "nome": "Roasted Garlic",
+        "ingredientes": ["Garlic", "Olive Oil", "Oregano"],
+        "imagem": "roasted_garlic.png"
+    },
+    {
+        "nome": "Garlic Rice",
+        "ingredientes": ["Rice", "Garlic", "Oil"],
+        "imagem": "garlic_rice.png"
+    },
+    {
+        "nome": "Garlic Bread",
+        "ingredientes": ["Bread", "Butter", "Garlic", "Oregano"],
+        "imagem": "garlic_bread.png"
+    },
+    {
+        "nome": "Garlic and Oil Pasta",
+        "ingredientes": ["Pasta", "Garlic", "Oil", "Butter"],
+        "imagem": "garlic_and_oil_pasta.png"
+    },
+    {
+        "nome": "Cod with Garlic Chips",
+        "ingredientes": ["Cod", "Garlic", "Olive Oil", "Lemon"],
+        "imagem": "cod_with_garlic_chips.png"
+    },
+    {
+        "nome": "Butter with Thyme and Garlic",
+        "ingredientes": ["Butter", "Garlic", "Thyme"],
+        "imagem": "butter_with_thyme_and_garlic.png"
+    },
+    {
+        "nome": "Pie with pumpkin filling",
+        "ingredientes": ["Pastry dough", "Pumpkin", "Tomato", "Garlic", "Oil", "Bread flour", "Nutmeg"],
+        "imagem": "tortei.png"
+    },
+    {
+        "nome": "Chicken Cream",
+        "ingredientes": ["Chicken", "Milk", "Sour Cream", "Corn", "Eggs"],
+        "imagem": "chicken_cream.png"
+    },
+    {
+        "nome": "Pancake",
+        "ingredientes": ["Wheat flour", "Butter", "Milk", "Eggs"],
+        "imagem": "pancake.png"
+    },
+    {
+        "nome": "Chocolate Milkshake",
+        "ingredientes": ["Chocolate", "Whipped cream"],
+        "imagem": "chocolate_milkshake.png"
+    },
+    {
+        "nome": "Chocolate Mousse",
+        "ingredientes": ["Sour Cream", "Chocolate", "Eggs", "Butter"],
+        "imagem": "chocolate_mousse.png"
+    }
+]

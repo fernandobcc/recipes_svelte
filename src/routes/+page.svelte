@@ -1,83 +1,50 @@
 <script lang="ts">
 	import '../app.css';
-	import Header from '$components/Header.svelte';
+
+	import Category from '$components/Category.svelte';
 	import MyList from '$components/MyList.svelte';
 	import Title from '$components/Title.svelte';
+	import Tag from '$components/Tag.svelte';
 
 	import categories from '$lib/json/categories.json';
-	import Category from '$components/Category.svelte';
-	import Tag from '$components/Tag.svelte';
-  import Footer from '$components/Footer.svelte';
 
-	let myList: string[] = [];
-
-	const addIngredients = (event: CustomEvent<string>) => {
-		const ingredient = event.detail;
-		myList = [...myList, ingredient];
-	};
-
-	const removeIngredients = (event: CustomEvent<string>) => {
-		const ingredient = event.detail;
-		myList = myList.filter((item) => item !== ingredient);
-	};
+	import { myList } from '$lib/stores/myList';
 </script>
 
 <svelte:head>
 	<title>APP | Index</title>
 </svelte:head>
 
-<div class="main-container">
-	<Header />
-	<div class="main-style">
-		{#if myList.length}
-			<div class="my-list-container">
-				<MyList ingredients={myList} />
-				<div class="diviser" />
-			</div>
-		{/if}
-		<main>
-			<Title tag={'h1'}>Ingredients</Title>
-			<div class="info">
-				<p>Please select the ingredients you would like to use below:</p>
-				<p>*Important: It is assumed that you already have salt, pepper and water at home.</p>
-			</div>
+{#if $myList.length}
+	<div class="my-list-container">
+		<MyList />
+		<div class="diviser" />
+	</div>
+{/if}
 
-			<ul class="categories">
-				{#each categories as category (category.name)}
-					<li>
-						<Category
-							{category}
-							on:addIngredients={addIngredients}
-							on:removeIngredients={removeIngredients}
-						/>
-					</li>
-				{/each}
-			</ul>
-
-			<div class="search-recipes">
-				<a href="/recipes" class="button">
-					<Tag active={true} size={'lg'}>Search recipes!</Tag>
-				</a>
-			</div>
-		</main>
+<main>
+	<Title tag={'h1'}>Ingredients</Title>
+	<div class="info">
+		<p>Please select the ingredients you would like to use below:</p>
+		<p>*Important: It is assumed that you already have salt, pepper and water at home.</p>
 	</div>
 
-	<Footer />
-</div>
+	<ul class="categories">
+		{#each categories as category (category.name)}
+			<li>
+				<Category {category} />
+			</li>
+		{/each}
+	</ul>
+
+	<div class="search-recipes">
+		<a href="/recipes" class="button">
+			<Tag active={true} size={'lg'}>Search recipes!</Tag>
+		</a>
+	</div>
+</main>
 
 <style>
-	.main-container {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	.main-style {
-		text-align: center;
-		padding: 0 5vw 3.375rem;
-		flex: 1;
-	}
-
 	.my-list-container {
 		margin-bottom: 2rem;
 	}
