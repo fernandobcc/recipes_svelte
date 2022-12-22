@@ -8,9 +8,9 @@
 	const onclick = () => {
 		selected = !selected;
 		if (selected) {
-			$myList = [...$myList, ingredient];
+			myList.addIngredients(ingredient);
 		} else {
-			$myList = $myList.filter((item) => item !== ingredient);
+			myList.removeIngredients(ingredient);
 		}
 	};
 </script>
