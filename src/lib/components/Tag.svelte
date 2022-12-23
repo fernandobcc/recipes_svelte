@@ -1,9 +1,10 @@
 <script lang="ts">
 	export let active = false;
 	export let size: 'lg' | 'md' = 'md';
+	export let disabled = false;
 </script>
 
-<div class="tag {size}" class:active>
+<div class="tag {size}" class:active class:disabled>
 	<slot />
 </div>
 
@@ -29,5 +30,10 @@
 	.lg {
 		font-size: 1.125rem;
 		padding: 1rem 1.5rem;
+	}
+
+	.disabled {
+		opacity: 0.8;
+		cursor: default;
 	}
 </style>

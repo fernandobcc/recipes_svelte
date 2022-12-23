@@ -3,11 +3,10 @@
 	import Tag from './Tag.svelte';
 
 	export let ingredient: string;
-	let selected = false;
+	$: selected = $myList.includes(ingredient);
 
 	const onclick = () => {
-		selected = !selected;
-		if (selected) {
+		if (!selected) {
 			myList.addIngredients(ingredient);
 		} else {
 			myList.removeIngredients(ingredient);
