@@ -1,7 +1,64 @@
+<script>
+	import Recipes from '$components/pages/recipes/Recipes.svelte';
+	import Title from '$components/shared/Title.svelte';
+
+	import recipes from '$lib/json/recipes.json';
+	import { myList } from '$lib/stores/myList';
+
+	$: filteredRecipes = recipes.filter((recipe) =>
+		recipe.ingredients.every((ingredient) => $myList.includes(ingredient))
+	);
+</script>
+
 <svelte:head>
 	<title>APP | Recipes</title>
 </svelte:head>
 
-<p>Recipes space</p>
+<main>
+	<Title tag={'h1'}>Amazing Recipes | Recipes</Title>
 
-<a href="/">Return to index page</a>
+	<div class="info">
+		<p class="green">Results found: {filteredRecipes.length}</p>
+		{#if filteredRecipes.length}
+			<p>Check recipe options found with selected options:</p>
+		{:else}
+			<p>Try to select other or more ingredients</p>
+		{/if}
+
+		<ul class="recipes">
+			{#each filteredRecipes as recipe (recipe.name)}
+				<li>
+					<Recipes {recipe} />
+				</li>
+			{/each}
+		</ul>
+	</div>
+</main>
+
+<style>
+	.info {
+		margin-bottom: 3.375rem;
+	}
+
+	.info > p {
+		line-height: 2rem;
+	}
+
+	.info > p.green {
+		color: var(--green);
+	}
+
+	.recipes {
+		text-align: start;
+		margin-bottom: 3.75rem;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	.recipes > li {
+		list-style-type: none;
+	}
+</style>

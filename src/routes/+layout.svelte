@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Footer from '$components/Footer.svelte';
-	import Header from '$components/Header.svelte';
-	import MyList from '$components/MyList.svelte';
+	import Footer from '$components/pages/layout/Footer.svelte';
+	import Header from '$components/pages/layout/Header.svelte';
+	import MyList from '$components/pages/layout/MyList.svelte';
 	import { myList } from '$lib/stores/myList';
 </script>
 
@@ -40,7 +40,7 @@
 	.diviser {
 		width: 40vw;
 		height: 2px;
-		background-color: var(--verde);
+		background-color: var(--green);
 		margin: 0 auto;
 	}
 </style>

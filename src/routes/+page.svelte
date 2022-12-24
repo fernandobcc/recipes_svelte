@@ -1,9 +1,9 @@
 <script lang="ts">
 	import '../app.css';
 
-	import Category from '$components/Category.svelte';
-	import Title from '$components/Title.svelte';
-	import Tag from '$components/Tag.svelte';
+	import Category from '$components/pages/index/Category.svelte';
+	import Title from '$components/shared/Title.svelte';
+	import Tag from '$components/shared/Tag.svelte';
 
 	import categories from '$lib/json/categories.json';
 	import { myList } from '$lib/stores/myList';
