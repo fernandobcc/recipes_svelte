@@ -1,23 +1,23 @@
 {
-  "src/routes/+page.css": {
-    "file": "internal/immutable/assets/_page-7814be60.css",
-    "src": "src/routes/+page.css"
-  },
   "Tag.css": {
     "file": "internal/immutable/assets/Tag-92cb0eb9.css",
     "src": "Tag.css"
-  },
-  "src/routes/recipes/+page.css": {
-    "file": "internal/immutable/assets/_page-7d1b9c19.css",
-    "src": "src/routes/recipes/+page.css"
   },
   "src/routes/+layout.css": {
     "file": "internal/immutable/assets/_layout-d1da191b.css",
     "src": "src/routes/+layout.css"
   },
+  "src/routes/+page.css": {
+    "file": "internal/immutable/assets/_page-7814be60.css",
+    "src": "src/routes/+page.css"
+  },
   "TagLink.css": {
     "file": "internal/immutable/assets/TagLink-e1b41c39.css",
     "src": "TagLink.css"
+  },
+  "src/routes/recipes/+page.css": {
+    "file": "internal/immutable/assets/_page-7d1b9c19.css",
+    "src": "src/routes/recipes/+page.css"
   },
   ".svelte-kit/generated/nodes/2.js": {
     "file": "internal/immutable/chunks/2-e983d989.js",
@@ -25,22 +25,6 @@
     "isDynamicEntry": true,
     "imports": [
       "src/routes/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "internal/immutable/chunks/1-ec4d968d.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
-    ]
-  },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "internal/immutable/chunks/0-56d6ec8d.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/+layout.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
@@ -51,10 +35,12 @@
       "src/routes/recipes/+page.svelte"
     ]
   },
-  "_singletons-e2b16926.js": {
-    "file": "internal/immutable/chunks/singletons-e2b16926.js",
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "internal/immutable/chunks/0-56d6ec8d.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-9bf5f0dc.js"
+      "src/routes/+layout.svelte"
     ]
   },
   "_Tag-0ef984dd.js": {
@@ -66,6 +52,12 @@
       "internal/immutable/assets/Tag-92cb0eb9.css"
     ]
   },
+  "_singletons-e2b16926.js": {
+    "file": "internal/immutable/chunks/singletons-e2b16926.js",
+    "imports": [
+      "_index-9bf5f0dc.js"
+    ]
+  },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
     "file": "internal/immutable/components/error.svelte-191fea84.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
@@ -75,17 +67,22 @@
       "_singletons-e2b16926.js"
     ]
   },
-  "src/routes/recipes/+page.svelte": {
-    "file": "internal/immutable/components/pages/recipes/_page.svelte-faec6356.js",
-    "src": "src/routes/recipes/+page.svelte",
-    "isEntry": true,
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "internal/immutable/chunks/1-ec4d968d.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  "_TagLink-a94f9439.js": {
+    "file": "internal/immutable/chunks/TagLink-a94f9439.js",
     "imports": [
       "_index-9bf5f0dc.js",
-      "_TagLink-a94f9439.js",
       "_Tag-0ef984dd.js"
     ],
     "css": [
-      "internal/immutable/assets/_page-7d1b9c19.css"
+      "internal/immutable/assets/TagLink-e1b41c39.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -114,18 +111,21 @@
       "internal/immutable/assets/_layout-d1da191b.css"
     ]
   },
-  "_index-9bf5f0dc.js": {
-    "file": "internal/immutable/chunks/index-9bf5f0dc.js"
-  },
-  "_TagLink-a94f9439.js": {
-    "file": "internal/immutable/chunks/TagLink-a94f9439.js",
+  "src/routes/recipes/+page.svelte": {
+    "file": "internal/immutable/components/pages/recipes/_page.svelte-faec6356.js",
+    "src": "src/routes/recipes/+page.svelte",
+    "isEntry": true,
     "imports": [
       "_index-9bf5f0dc.js",
+      "_TagLink-a94f9439.js",
       "_Tag-0ef984dd.js"
     ],
     "css": [
-      "internal/immutable/assets/TagLink-e1b41c39.css"
+      "internal/immutable/assets/_page-7d1b9c19.css"
     ]
+  },
+  "_index-9bf5f0dc.js": {
+    "file": "internal/immutable/chunks/index-9bf5f0dc.js"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
     "file": "internal/immutable/start-849669d7.js",
