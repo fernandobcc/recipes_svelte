@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-body-bg: #fef7ec;
+	--color-main-text: #444444;
+	--white: #fafafa;
+	--gray: #eaeaea;
+	--orange: #ff734c;
+	--green: #41a86a;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	color: var(--color-main-text);
+
+	min-height: 100vh;
+	background: url('/images/marble_texture.png') repeat;
+	background-color: var(--color-body-bg);
+	background-size: 100%;
+}
+
+button,
+input,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+button {
+	border: 0;
+	background-color: transparent;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
