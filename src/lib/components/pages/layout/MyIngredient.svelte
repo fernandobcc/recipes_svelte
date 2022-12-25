@@ -29,7 +29,7 @@
 	}
 
 	.close {
-		background-image: url('icons/close.svg');
+		background-image: url('/icons/close.svg');
 		height: 10px;
 		width: 10px;
 		cursor: pointer;

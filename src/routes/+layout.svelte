@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '../app.css';
+
 	import Footer from '$components/pages/layout/Footer.svelte';
 	import Header from '$components/pages/layout/Header.svelte';
 	import MyList from '$components/pages/layout/MyList.svelte';
