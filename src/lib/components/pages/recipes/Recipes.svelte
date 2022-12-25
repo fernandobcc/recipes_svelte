@@ -5,7 +5,7 @@
 	export let recipe: IRecipe;
 </script>
 
-<Card>
+<Card --cardWidth="280px">
 	<img
 		src="/images/recipes/{recipe.image}"
 		alt={recipe.name}

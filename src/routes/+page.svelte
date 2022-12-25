@@ -8,6 +8,7 @@
 	import categories from '$lib/json/categories.json';
 	import { myList } from '$lib/stores/myList';
 	import { beforeNavigate } from '$app/navigation';
+	import TagLink from '$components/shared/TagLink.svelte';
 
 	$: isListEmpty = $myList.length === 0;
 
@@ -41,11 +42,7 @@
 	</ul>
 
 	<div class="search-recipes">
-		<a href="/recipes" class="button">
-			<Tag active={true} size={'lg'} disabled={isListEmpty}>
-				Search recipes!
-			</Tag>
-		</a>
+		<TagLink disabled={isListEmpty} href={'/recipes'}>Search recipes!</TagLink>
 	</div>
 </main>
 
