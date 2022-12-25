@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Category from '$components/pages/index/Category.svelte';
 	import Title from '$components/shared/Title.svelte';
+	import { base } from '$app/paths';
 
 	import categories from '$lib/json/categories.json';
 	import { myList } from '$lib/stores/myList';
@@ -39,7 +40,9 @@
 	</ul>
 
 	<div class="search-recipes">
-		<TagLink disabled={isListEmpty} href={'/recipes'}>Search recipes!</TagLink>
+		<TagLink disabled={isListEmpty} href={`${base}/recipes`}
+			>Search recipes!</TagLink
+		>
 	</div>
 </main>
 

@@ -2,6 +2,7 @@
 	import Recipes from '$components/pages/recipes/Recipes.svelte';
 	import TagLink from '$components/shared/TagLink.svelte';
 	import Title from '$components/shared/Title.svelte';
+	import { base } from '$app/paths';
 
 	import recipes from '$lib/json/recipes.json';
 	import { myList } from '$lib/stores/myList';
@@ -38,7 +39,7 @@
 	{/if}
 
 	<div class="edit-list">
-		<TagLink href="/">Edit list!</TagLink>
+		<TagLink href="{base}/">Edit list!</TagLink>
 	</div>
 </main>
 
