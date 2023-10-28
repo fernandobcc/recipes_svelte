@@ -1,12 +1,11 @@
 <script lang="ts">
-	import Category from '$components/pages/index/Category.svelte';
-	import Title from '$components/shared/Title.svelte';
-	import { base } from '$app/paths';
+	import Category from '$lib/components/pages/index/Category.svelte';
+	import Title from '$lib/components/shared/Title.svelte';
 
 	import categories from '$lib/json/categories.json';
 	import { myList } from '$lib/stores/myList';
 	import { beforeNavigate } from '$app/navigation';
-	import TagLink from '$components/shared/TagLink.svelte';
+	import TagLink from '$lib/components/shared/TagLink.svelte';
 
 	$: isListEmpty = $myList.length === 0;
 
@@ -40,9 +39,7 @@
 	</ul>
 
 	<div class="search-recipes">
-		<TagLink disabled={isListEmpty} href={`${base}/recipes`}
-			>Search recipes!</TagLink
-		>
+		<TagLink disabled={isListEmpty} href={'/recipes'}>Search recipes!</TagLink>
 	</div>
 </main>
 

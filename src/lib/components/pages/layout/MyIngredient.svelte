@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import Tag from '$components/shared/Tag.svelte';
+	import Tag from '$lib/components/shared/Tag.svelte';
 	import { myList } from '$lib/stores/myList';
 
 	export let ingredient: string;

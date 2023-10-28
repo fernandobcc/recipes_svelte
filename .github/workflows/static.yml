@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['main']
+    branches: ['master']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -40,14 +40,15 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_TEST_VAR: ${{ secrets.VITE_TEST_VAR }}
+            VITE_TEST_VAR: ${{ secrets.VITE_TEST_VAR }}
+            TEST_VAR: ${{ secrets.TEST_VAR }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
-          path: './dist'
+          path: './build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

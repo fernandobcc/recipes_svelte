@@ -1,8 +1,7 @@
 <script>
-	import Recipes from '$components/pages/recipes/Recipes.svelte';
-	import TagLink from '$components/shared/TagLink.svelte';
-	import Title from '$components/shared/Title.svelte';
-	import { base } from '$app/paths';
+	import Recipes from '$lib/components/pages/recipes/Recipes.svelte';
+	import TagLink from '$lib/components/shared/TagLink.svelte';
+	import Title from '$lib/components/shared/Title.svelte';
 
 	import recipes from '$lib/json/recipes.json';
 	import { myList } from '$lib/stores/myList';
@@ -39,7 +38,7 @@
 	{/if}
 
 	<div class="edit-list">
-		<TagLink href="{base}/">Edit list!</TagLink>
+		<TagLink href="/">Edit list!</TagLink>
 	</div>
 </main>
 
